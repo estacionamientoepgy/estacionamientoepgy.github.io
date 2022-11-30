@@ -4,7 +4,7 @@ class MiFooter
     this.innerHTML = /* html */
       `<p>
         &copy; 2022
-        Ricardo Armando Machorro Reyes.
+        Espinosa Perez Gerardo Yahir
       </p>`;
   }
 }
