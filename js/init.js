@@ -13,6 +13,6 @@ firebase.initializeApp({
   projectId: "estacionamientoepg",
   storageBucket: "estacionamientoepg.appspot.com",
   messagingSenderId: "914456470409",
-  appId: "1:914456470409:web:6cbe8c227e92cb6d563758",
-  measurementId: "G-Z8EE7P9EEN"
+  appId: "1:914456470409:web:abd42184cd51db30563758",
+  measurementId: "G-KTG4R5B668"
 });
