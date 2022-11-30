@@ -3,15 +3,14 @@
  * @property {string} descripción
  */
 
-/**
- * @typedef {Object} Alumno
- * @property {string} nombre
+ * @typedef {Object} Carro
+ * @property {string} nombrep
  */
 
 /**
  * @typedef {Object} Usuario
  * @property {string[]} rolIds
- * @property {string} alumnoId
+ * @property {string} CarroId
  */
 
 // @ts-nocheck
