@@ -1,8 +1,9 @@
 export function
-  muestraAlumnos() {
+  muestraCarros() {
   location.href =
-    "alumnos.html";
+    "Carros.html";
 }
+
 
 export function
   muestraUsuarios() {
