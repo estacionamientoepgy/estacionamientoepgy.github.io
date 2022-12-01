@@ -13,9 +13,9 @@ import {
 /** @type {HTMLUListElement} */
 const lista = document.
   querySelector("#lista");
-const daoAlumno =
+const daoCarro =
   getFirestore().
-    collection("Alumno");
+    collection("Carro");
 
 getAuth().
   onAuthStateChanged(
@@ -32,7 +32,7 @@ async function protege(usuario) {
 }
 
 function consulta() {
-  daoAlumno.
+  daoCarro.
     orderBy("nombre")
     .onSnapshot(
       htmlLista, errConsulta);
@@ -50,7 +50,7 @@ function htmlLista(snap) {
   } else {
     html += /* html */
       `<li class="vacio">
-        -- No hay alumnos
+        -- No hay Carro
         registrados. --
       </li>`;
   }
