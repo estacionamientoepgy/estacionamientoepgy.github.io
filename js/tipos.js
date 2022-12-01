@@ -3,8 +3,9 @@
  * @property {string} descripción
  */
 
+/**
  * @typedef {Object} Carro
- * @property {string} nombrep
+ * @property {string} nombre
  */
 
 /**
