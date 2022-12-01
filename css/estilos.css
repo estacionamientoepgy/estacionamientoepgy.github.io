@@ -19,8 +19,9 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color:
-    var(--color-header);
+   background-color:royalblue;
+  border-radius: 20px;
+  border: 2 solid;
 }
 
 .herramientas {
