@@ -7,13 +7,13 @@ import {
   muestraError
 } from "../lib/util.js";
 import {
-  muestraCarros
+  muestraCarro
 } from "./navegacion.js";
 import {
   tieneRol
 } from "./seguridad.js";
 
-const daoAlumno =
+const daoCarro =
   getFirestore().
     collection("Carro");
 const params =
@@ -51,7 +51,7 @@ async function busca() {
                   Alumno} */
       const data = doc.data();
       forma.matricula.value = data.matricula;
-      forma.nombrep.value = data.nombrep || "";
+      forma.nombre.value = data.nombre || "";
       forma.telefono.value = data.telefono || "";
       forma.marca.value = data.marca || "";
       forma.fecha.value = data.fecha || "";
@@ -66,7 +66,7 @@ async function busca() {
     }
   } catch (e) {
     muestraError(e);
-    muestraCarros();
+    muestraCarro();
   }
 }
 
@@ -78,7 +78,7 @@ async function guarda(evt) {
       new FormData(forma);
     const matricula = getString(
         formData, "matricula").trim();  
-    const nombrep = getString(formData, "nombrep").trim();
+    const nombre = getString(formData, "nombre").trim();
     const telefono = getString(formData, "telefono").trim();
     const marca = getString(formData, "marca").trim();
     const fecha = getString(formData, "fecha").trim();
@@ -88,7 +88,7 @@ async function guarda(evt) {
                 Alumno} */
     const modelo = {
       matricula, 
-      nombrep,
+      nombre,
       telefono,
       marca,
       fecha
@@ -109,7 +109,7 @@ async function elimina() {
       await daoCarro.
         doc(id).
         delete();
-      muestraCarros();
+      muestraCarro();
     }
   } catch (e) {
     muestraError(e);
