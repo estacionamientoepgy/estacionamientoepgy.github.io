@@ -7,7 +7,7 @@ import {
   muestraError
 } from "../lib/util.js";
 import {
-  muestraAlumnos
+  muestraCarro
 } from "./navegacion.js";
 import {
   tieneRol
@@ -40,7 +40,7 @@ async function guarda(evt) {
       new FormData(forma);
     const matricula = getString(
         formData, "matricula").trim();  
-    const nombrep = getString(formData, "nombrep").trim();
+    const nombrep = getString(formData, "nombre").trim();
     const telefono = getString(formData, "telefono").trim();
     const marca = getString(formData, "marca").trim();
     const fecha = getString(formData, "fecha").trim();
@@ -50,7 +50,7 @@ async function guarda(evt) {
                 Alumno} */
     const modelo = {
       matricula,
-      nombrep,
+      nombre,
       telefono,
       marca,
       fecha 
