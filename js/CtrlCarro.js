@@ -96,7 +96,7 @@ async function guarda(evt) {
     await daoCarro.
       doc(id).
       set(modelo);
-    muestraCarros();
+    muestraCarro();
   } catch (e) {
     muestraError(e);
   }
